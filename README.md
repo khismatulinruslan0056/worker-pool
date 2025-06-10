@@ -83,7 +83,7 @@ Workers:
 - Worker 1
 - Worker 2
 - Worker 4
-
+```
 ### Выход из программы
 ``` shell
 exit
