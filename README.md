@@ -37,13 +37,13 @@ add
 Команда ADD
 Worker 1
 message: От улыбки станет день светлей,
-
+```
 ### Удаление последнего воркера
 ``` shell
 remove
 Команда REMOVE
 Worker 1 stopped
-
+```
 ### Удаление воркера по ID
 ``` shell
 add
@@ -54,27 +54,27 @@ removebyid
 Введите ID: 3
 Команда REMOVEBYID
 Worker 3 stopped
-
+```
 ### Повторное добавление воркера с тем же ID
 ``` shell
 add
 Введите ID: 1
 Команда ADD
 handleCommand: AddWorker: worker with this id already exists
-
+```
 ### Удаление несуществующего воркера по ID
 ``` shell
 removebyid
 Введите ID: 99
 Команда REMOVEBYID
 error happened: RemoveWorkerByID: GetNumbWorker 99: worker doesn't exist
-
+```
 ### Попытка удалить воркера, когда их нет
 ``` shell
 remove
 Команда REMOVE
 error happened: RemoveWorker: no workersID to remove
-
+```
 ### Показ списка активных воркеров
 ``` shell
 list
@@ -91,3 +91,4 @@ exit
 Worker 1 stopped
 Worker 2 stopped
 Worker 4 stopped
+```
