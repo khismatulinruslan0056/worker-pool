@@ -31,6 +31,7 @@
 ## Примеры работы
 
 ### Добавление воркера
+``` shell
 add
 Введите ID: 1
 Команда ADD
@@ -38,11 +39,13 @@ Worker 1
 message: От улыбки станет день светлей,
 
 ### Удаление последнего воркера
+``` shell
 remove
 Команда REMOVE
 Worker 1 stopped
 
 ### Удаление воркера по ID
+``` shell
 add
 Введите ID: 3
 Команда ADD
@@ -53,23 +56,27 @@ removebyid
 Worker 3 stopped
 
 ### Повторное добавление воркера с тем же ID
+``` shell
 add
 Введите ID: 1
 Команда ADD
 handleCommand: AddWorker: worker with this id already exists
 
 ### Удаление несуществующего воркера по ID
+``` shell
 removebyid
 Введите ID: 99
 Команда REMOVEBYID
 error happened: RemoveWorkerByID: GetNumbWorker 99: worker doesn't exist
 
 ### Попытка удалить воркера, когда их нет
+``` shell
 remove
 Команда REMOVE
 error happened: RemoveWorker: no workersID to remove
 
 ### Показ списка активных воркеров
+``` shell
 list
 Команда LIST
 Workers:
@@ -78,6 +85,7 @@ Workers:
 - Worker 4
 
 ### Выход из программы
+``` shell
 exit
 Команда EXIT
 Worker 1 stopped
