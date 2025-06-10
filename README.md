@@ -1,4 +1,4 @@
-# Worker Pool на Go
+# Worker Pool
 
 ## Описание
 
